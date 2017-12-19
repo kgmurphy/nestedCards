@@ -1,0 +1,142 @@
+/*-- Global --*/
+
+body, html {
+  background-color: #f0f0f0;
+}
+
+
+/*-- Setup your structure here --*/
+
+section {
+  max-width: 80em;
+  margin: auto;
+}
+
+figure img {
+  margin: auto;
+  max-width: 50em;
+}
+
+// For the demo page only:
+.rounded {
+  @include border-radius(0.5em);
+  background-color: #323232;
+  padding: 1em 0px;
+}
+
+.figcap {
+  text-align: center;
+  padding-top: 2em;
+  margin: auto;
+  color: #70E7E7;
+  font-family: 'Inconsolata-Regular';
+  text-transform: uppercase;
+}
+.dasher {
+  width: 100%;
+
+  div {
+    border: dotted 1px #0C74DA;
+    padding: 0.5em;
+    margin: 2px;
+    color: #abd4fd;
+    font-family: 'Inconsolata-Regular';
+    background: rgba(46,146,250,0.15);
+    text-transform: uppercase;
+    margin: 1em;
+    @include box-shadow(0px,2px,4px,0, rgba(0,0,0,0.25), false);
+    @include border-radius(0.25em);
+    }
+
+    p {
+      font-size: 1em;
+    }
+}
+
+
+.innerDasher {
+
+  div {
+    border: dotted 1px #70E7E7;
+    background-color: rgba(112,231,231,0.35);
+    padding: 0.5em;
+    margin: 2px;
+  }
+}
+
+.innerDasher {
+  padding: 0 !important;
+  margin: 0 !important;
+  border : 0 !important;
+  background: transparent !important;
+}
+
+.abbCard-deck {
+  margin-bottom: 8em;
+}
+
+.abbCard-wrapper * {
+  font-family: 'Inconsolata-Regular';
+  font-size: 1.0em;
+  text-transform: uppercase;
+}
+
+/*-- Txt --*/
+
+p {
+  font-size: 1.5em;
+  color: #323232;
+  padding-top: 1.5em;
+}
+
+/*-- Images --*/
+img {
+  display: block;
+  width: 100%;
+}
+
+/*-- Buttons --*/
+button {
+  padding: 0.5em;
+  background-color: #fff;
+  color: #abd4fd;
+  border: solid 1px #f0f0f0;
+}
+
+
+/*-- Prism styling --*/
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #fafafa;
+  @include border-radius(0.5em);
+  @include box-shadow(0px,2px,4px,0, rgba(0,0,0,0.25), false);
+}
+
+/*-- Head styling --*/
+
+.abbCard-head div, .abbCard-foot div {
+  background-color: #fff;
+  margin-right: 0.25em;
+  padding: 0.25em;
+  color: #70E7E7;
+  border: dotted 1px #70E7E7;
+}
+
+.abbCard-head div:last-child, .abbCard-foot div:last-child {
+  margin-right: 0em;
+}
+
+/*-- For the JS --*/
+
+.hidden {
+  display: none;
+}
+
+.billy {
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  padding: 1em;
+  color: yellow;
+  z-index: 2000;
+}

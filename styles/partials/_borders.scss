@@ -1,0 +1,60 @@
+/*-- Border Radius--*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Usage:
+// @include border-radius(top left, top right, bottom right, bottom left);
+
+// Or with vendors mixin (located in _vendors.scss):
+// @include vendor-prefixes(border-radius, $radius);
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  @include vendor-prefixes(border-radius, $radius);
+}
+
+
+// Individual corners
+
+// Top border radius
+@mixin border-top-radius($radius) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+// Usage:
+// @include border-top-radius(5px);
+
+
+// Left border radius
+@mixin border-left-radius($radius) {
+  border-bottom-left-radius: $radius;
+  border-top-left-radius: $radius;
+}
+
+// Usage
+// @include border-left-radius(5px);
+
+// Bottom border radius
+@mixin border-bottom-radius($radius) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+// Usage:
+// @include border-bottom-radius(5px);
+
+// Right border radius
+@mixin border-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+// Usage
+// @include border-right-radius(5px);

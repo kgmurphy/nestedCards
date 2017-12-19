@@ -1,0 +1,67 @@
+
+<script>
+
+  var cards = document.querySelectorAll('.abbCard-wrapper');
+
+  cards.forEach(function(card, index){
+    var front = card.querySelector('.abbCard-body-front');
+    var back = card.querySelector('.abbCard-body-back');
+    var switcher = card.querySelectorAll('.switcher');
+
+    for(var i = 0; i < switcher.length; i++){
+      switcher[i].addEventListener('click', function(){
+        front.classList.toggle('hidden');
+        back.classList.toggle('hidden');
+      });
+    };
+
+  });
+
+
+  //console.log();
+</script>
+
+
+
+<script>
+
+
+var timeout;
+var d_width;
+
+var d = document.querySelector('.abbCard-deck');
+var showWidth = document.querySelector('.showWidth');
+var deckWidth;
+var cardWidth;
+
+
+
+  deckWidth = document.createElement('div');
+  showWidth.appendChild(deckWidth);
+  console.log(showWidth);
+
+
+
+window.addEventListener('resize', function(event){
+  console.log('no debounce');
+
+  if(!timeout){
+    timeout = setTimeout(function(){
+
+        timeout = null;
+        console.log('debounced');
+
+        d_width = d.offsetWidth;
+
+        deckWidth.innerHTML = "Carddeck width = " + d_width;
+
+    }, 66);
+
+
+    console.log(d_width);
+  }
+}, false);
+
+
+
+</script>

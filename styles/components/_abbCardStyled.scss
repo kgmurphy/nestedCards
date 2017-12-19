@@ -1,0 +1,78 @@
+
+.abbCard-deck {
+  border: dotted 1px #d2d2d2;
+  padding: 1em 0.5em 0em 0.5em;
+  margin-bottom: 1em;
+  background-color: rgba(255,255,255,0.35);
+}
+
+.abbCard-deck .abbCard-wrapper:last-child {
+  //margin-right: 0;
+}
+
+.abbCard-wrapper {
+  background-color: #fff;
+  min-height: 100%;
+  margin: 0em 0.5em 1em 0.5em;
+  padding: 0.5em;
+  @include border-radius(0.125em);
+  @include box-shadow(0px,2px,4px,0, rgba(0,0,0,0.25), false);
+}
+
+.abbCard-head,.abbCard-foot  {
+  background-color: #fff;
+}
+
+.abbCard-head {
+  @include border-top-radius(0.125em);
+  border-bottom: solid 1px #f0f0f0;
+  padding-bottom: 0.5em;
+}
+
+.abbCard-foot {
+  @include border-bottom-radius(0.125em);
+  border-top: solid 1px #f0f0f0;
+  padding-top: 0.5em;
+}
+
+.abbCard-head *,.abbCard-foot * {
+
+}
+
+.abbCard-body-front,
+.abbCard-body-back {
+  height: 100%;
+  background-color: #fff;
+}
+
+.abbCard-core {
+}
+
+.abbCard-core .abbCard-core-displayBox {
+  background-color: #fafafa;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+.abbCard-core .abbCard-core-controls {
+  background-color: #fafafa;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+.abbCard-core .abbCard-core-details {
+    background-color: #fafafa;
+
+    padding: 0.5em;
+    text-transform: none!important;
+    line-height: 1.5em;
+    color: rgba(0,0,0,0.6);
+}
+
+.abbCard-foot {
+  background-color: #fff;
+}
+
+/*-- NESTED CORES--*/
+
+.abbCard-core-details > .abbCard-core {
+  border: solid 1px #f0f0f0;
+}

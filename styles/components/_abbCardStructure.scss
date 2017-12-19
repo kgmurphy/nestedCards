@@ -1,0 +1,64 @@
+
+.abbCard-deck {
+  @include flexbox;
+  //If you want to center the cards in the card deck:
+  /*
+  @include justify-content(center);
+  @include align-items(center);
+  */
+}
+
+.abbCard-deck .abbCard-wrapper:last-child {
+}
+
+.abbCard-wrapper {
+  @include flexbox;
+  @include flex(1);
+  @include flex-direction(column);
+}
+
+.abbCard-head,.abbCard-foot  {
+  @include flexbox;
+  @include flex(1);
+  @include flex(1 0 auto);
+  @include justify-content(space-between);
+  @include align-items(center);
+}
+
+.abbCard-head ,.abbCard-foot  {
+  @include flex-grow(1);
+}
+
+
+/*
+.abbCard-head *,.abbCard-foot * {
+  @include flex-grow(1);
+}
+*/
+
+.abbCard-body-front,
+.abbCard-body-back {
+  @include flexbox;
+  height: 100%;
+}
+
+.abbCard-core {
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(stretch);
+  @include flex(1);
+}
+
+.abbCard-core .abbCard-core-displayBox {
+}
+
+.abbCard-core .abbCard-core-controls {
+}
+
+.abbCard-core .abbCard-core-details {
+  @include flex(1 0 auto);
+}
+
+.abbCard-foot {
+  //@include justify-content(flex-end);
+}

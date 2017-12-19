@@ -1,0 +1,45 @@
+.abbCard-column {
+  @include flex-direction(column);
+}
+
+.abbCard-row {
+  @include flex-direction(row);
+}
+
+.abbLayout-justify-start {
+  @include justify-content(flex-start);
+}
+
+.abbLayout-justify-end {
+  @include justify-content(flex-end);
+}
+
+.abbLayout-justify-center {
+
+  @include justify-content(center);
+}
+
+.abbLayout-justify-space-between {
+  @include justify-content(space-between);
+}
+
+.abbLayout-justify-space-around {
+  @include justify-content(space-around);
+}
+
+
+
+.align-text-right,
+.align-text-right *{
+  text-align: right;
+}
+
+.align-text-left,
+.align-text-left *{
+  text-align: left;
+}
+
+.align-text-center ,
+.align-text-center *{
+  text-align: center;
+}
