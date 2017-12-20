@@ -18,7 +18,7 @@
     <img src="images/ExplodedView.png" alt="">
     <figcaption>Exploded view of card with nested card in the <i>.abbCard-core-details</i></figcaption>
   </figure>
-  <h2>Anatomy of an ABB card</h2>
+  <h2>Anatomy of an ABB card DARK</h2>
   <ul>
     <li>abbCard-deck</li>
     <li>abbCard-wrapper</li>
